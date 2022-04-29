@@ -8,7 +8,13 @@ namespace Personajes
 {
     internal static class Turno
     {
-        public static void Atacarse(IList<Personaje> personajes) { }
+        public static void Atacarse(IList<Personaje> personajes)
+        {
+            foreach(Personaje p in personajes)
+            {
+                p.Atacar();
+            }
+        }
         public static void MoverFichas(IMoverse ficha) { }
     }
 }
