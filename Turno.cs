@@ -15,6 +15,10 @@ namespace Personajes
                 p.Atacar();
             }
         }
-        public static void MoverFichas(IMoverse ficha) { }
+        public static void MoverFichas(IMoverse ficha)
+        {
+            ficha.MoverseEjeX();
+            ficha.MoverseEjeY();
+        }
     }
 }

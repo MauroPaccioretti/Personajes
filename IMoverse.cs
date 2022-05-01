@@ -8,7 +8,7 @@ namespace Personajes
 {
     internal interface IMoverse
     {
-        int MoverseEjeX();
-        int MoverseEjeY();
+        void MoverseEjeX();
+        void MoverseEjeY();
     }
 }

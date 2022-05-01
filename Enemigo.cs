@@ -11,14 +11,14 @@ namespace Personajes
         public double Vida { get; set; }
         public int Nivel { get; set; }
 
-        public int MoverseEjeX()
+        public void MoverseEjeX()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("El enemigo se mueve 100 posiciones en el eje X");
         }
 
-        public int MoverseEjeY()
+        public void MoverseEjeY()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("El enemigo se mueve 100 posiciones en el eje Y");
         }
     }
 }

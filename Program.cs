@@ -10,3 +10,18 @@ personajes.Add(personajeDeMagia);
 
 Turno.Atacarse(personajes);
 
+List<IMoverse> moverseList = new();
+
+moverseList.AddRange(personajes);
+Enemigo enemigo1 = new();
+moverseList.Add(enemigo1);
+Enemigo enemigo2 = new();
+moverseList.Add(enemigo2);
+moverseList.Add(new Enemigo());
+
+foreach(IMoverse entidad in moverseList)
+{
+    Turno.MoverFichas(entidad);
+}
+
+

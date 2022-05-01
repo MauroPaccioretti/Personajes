@@ -19,14 +19,14 @@ namespace Personajes
             Console.WriteLine($"{this.Nombre} hizo {this.CalcularDanio()} de daño");
         }
 
-        public int MoverseEjeX()
+        public void MoverseEjeX()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.Nombre} se mueve {this.Agilidad} casilleros en eje X");
         }
 
-        public int MoverseEjeY()
+        public void MoverseEjeY()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.Nombre} se mueve {this.Agilidad / 2 + this.Fuerza + this.Magia} casilleros en el eje Y");
         }
     }
 }
